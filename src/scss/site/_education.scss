@@ -1,0 +1,112 @@
+.education-panel{
+    background-color: $greybg;
+    padding-top: 3rem;
+    text-align: center;
+
+    .education-heading{
+        @include raleway-reg();
+        @include textopt(2rem, $darkgreytext);
+        position: relative;
+        padding-bottom: 1rem;
+
+        &:before{
+            @include redunderline();
+        }
+    }
+
+    .education-text{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        line-height: 1.5rem;
+    }
+
+    .education{
+        text-align: left;
+        padding: 1.5rem 1.75rem;
+        background-color: $mainbluecolor;
+        border-radius: .5rem;
+        color: #fff;
+        width:90%;
+        margin: 2.5rem auto;
+    }
+
+    .education-list{
+        padding-bottom: .5rem;
+    }
+
+    .education-title{
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+    }
+    .education-timeline{
+        padding-top: .25rem;
+        @include textopt(1rem, $salmonred);
+    }
+    .education-link{
+        padding-top:.5rem;
+        @include textopt(.875rem, #8E8E93);
+    }
+
+    .education-program, .education-school{
+        color: #575760;
+    }
+
+    .education-description{
+        padding-top:1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media(min-width:480px){
+    .education-panel{
+        padding-top: 4.5rem;
+        .education-heading{
+            @include textopt(3rem, $darkgreytext);
+            @include raleway-bold();
+    
+            &:before{
+                display: none;
+            }
+        }
+
+        .education-list{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .education{
+            width: 47.5%;
+            margin-right: auto;
+            margin-left:0;
+
+            &:nth-child(even){
+            margin-left: auto;
+            margin-right:0;
+            }
+        }
+
+        .education-text{
+            margin-top:.5rem;
+            color: $middlegreytext;
+        }
+
+        .education-title{
+            font-size: 1rem;
+        }
+        .education-timeline{
+            font-size: .75rem;
+        }
+        .education-link{
+            font-size: .625rem;
+        }
+    
+        .education-program, .education-school{
+            font-size: .75rem;
+        }
+    
+        .education-description{
+            font-size: .75rem;
+        }
+    }
+}

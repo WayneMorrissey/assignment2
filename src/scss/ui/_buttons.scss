@@ -1,0 +1,7 @@
+.btn-red-large{
+    @include large-clean-button($salmonred);
+}
+
+.btn-aqua-large{
+    @include large-clean-button($aquaticblue);
+}

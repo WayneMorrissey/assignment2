@@ -1,0 +1,56 @@
+@mixin backgroundmainblue() {
+    background-color: $mainbluecolor;
+}
+
+@mixin roboto-reg() {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+@mixin roboto-bold() {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+@mixin raleway-reg() {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+@mixin raleway-bold() {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+@mixin textopt($rem: 1rem, $color: #000) {
+    font-size: $rem;
+    color: $color;
+}
+
+@mixin flex($justify: space-between, $alignitems: center, $aligncontent: space-between) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $alignitems;
+}
+
+@mixin large-clean-button($bgColor: $salmonred, $textSize: 1.25rem, $textColor: #fff) {
+    display: block;
+    max-width: 16.5rem;
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: .25rem;
+    background-color: $bgColor;
+    @include textopt($textSize, $textColor);
+}
+
+@mixin redunderline() {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1rem;
+    bottom: 0;
+    left: calc(50% - (5.25rem / 2));
+    width: 5.25rem;
+    border-bottom: 2px solid $salmonred;
+}

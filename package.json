@@ -1,0 +1,19 @@
+{
+  "name": "assignment2",
+  "version": "1.0.0",
+  "description": "Assignment 2 for Web Dev 2 with Jim Foley by Wayne Morrissey",
+  "main": "gulpfile.js",
+  "scripts": {
+    "watch": "npx sass --watch src/scss/styles.scss src/css/styles.css",
+    "sass": "npx sass src/scss/styles.scss src/css/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "sass": "^1.17.2"
+  }
+}

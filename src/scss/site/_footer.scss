@@ -1,0 +1,7 @@
+.page-footer{
+    @include textopt(.75rem, $darkgreytext);
+    text-align: center;
+    line-height: 1.5rem;
+    margin-top: 4.75rem;
+    margin-bottom: 3rem;
+}

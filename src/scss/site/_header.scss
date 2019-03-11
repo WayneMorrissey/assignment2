@@ -1,0 +1,75 @@
+.page-header{
+    @include backgroundmainblue();
+    @include roboto-reg();
+    padding-bottom: 2rem;
+
+    .profile-pic{
+        display: block;
+        width: 7rem;
+        margin: 0 auto;
+        position: relative;
+        padding-bottom: 1.5rem;
+
+        &:before{
+            @include redunderline();
+        }
+    }
+
+    .intro-info{
+        padding:2.5rem;
+        text-align: center;
+    }
+
+    .intro-name{
+        @include raleway-reg();
+        @include textopt(2.5rem, #fff);
+    }
+    .intro-title{
+        padding-top: 0.5rem;
+        @include textopt(1.1rem, $greytext);
+    }
+
+    .header-buttons {
+        width: 100%;
+    }
+
+    .header-button{
+        margin: 0 auto;
+        margin-bottom: .75rem;
+    }
+
+    .header-gulp{
+        text-align: center;
+        padding-top: .5rem;
+    }
+
+    .gulp-img{
+        width: 1.5rem;
+        color: #fff;
+    }
+
+    .gulp-text{
+        @include textopt(1rem, #fff);
+    }
+}
+
+@media(min-width: 480px){
+    .page-header{
+        .header-buttons{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            margin-bottom: 4.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .header-button{
+            margin: 0;
+
+            &:nth-child(1){
+                margin-right: 1.5rem;
+            }
+        }
+    }
+}

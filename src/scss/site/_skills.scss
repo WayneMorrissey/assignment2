@@ -1,0 +1,89 @@
+.skills-summary{
+    margin-top: 6rem;
+    text-align: center;
+
+    .summary-heading{
+        @include raleway-reg();
+        @include textopt(2rem, $darkgreytext);
+        text-align: center;
+        position: relative;
+        padding-bottom: 1rem;
+
+        &:before{
+            @include redunderline();
+        }
+    }
+
+    .skills-text{
+        display: none;
+    }
+
+    .skills-list{
+        margin-top: 1.5rem;
+    }
+
+    .skill-image{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    .skill-image-heading, .skill-description{
+        display: none;
+    }
+}
+
+@media(min-width: 480px){
+    .skills-summary{
+        .summary-heading{
+            @include raleway-bold();
+            @include textopt(3.25rem, $middlegreytext);
+
+            &:before{
+                display: none;
+            }
+        }
+
+        .skills-list{
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 3rem;
+        }
+
+        .skill-image{
+            flex: 0 0 50%;
+            margin-bottom: 2rem;
+        }
+
+        img{
+            width: 60%;
+        }
+
+        .skills-text{
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 1rem;
+            line-height: 1.5rem;
+            color: $middlegreytext;
+        }
+
+        .skill-image-heading{
+            display: block;
+            @include raleway-bold();
+            @include textopt(2.25rem, $middledarkgrey);
+            margin-bottom: 1rem;
+        }
+
+        .skill-description{
+            display: block;
+            @include textopt(.875rem, $greytext);
+            line-height: 1.5rem;
+            width: 75%;
+            margin: 0 auto;
+            margin-top: .5rem;
+        }
+    }
+}
