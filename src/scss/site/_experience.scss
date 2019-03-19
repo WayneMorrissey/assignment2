@@ -1,7 +1,9 @@
 .experience-panel{
+    margin: 0 auto;
     margin-top: 3.5rem;
     text-align: center;
     color: $middlegreytext;
+    max-width: 920px;
     
     .experience-heading{
         @include raleway-reg();

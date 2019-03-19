@@ -24,12 +24,52 @@
         padding-top: .25rem;
         letter-spacing: .5px;
     }
+
+    .desktop-menu-links{
+        justify-content: space-between;
+        width: 75%;
+        // margin-left: 5%;
+        // margin-right: 5%;
+        margin: 0 auto;
+        max-width: 800px;
+        display: none;
+    }
+
+    .desktop-menu-link{
+        @include textopt(1.25rem, #B8B8BD);
+        @include roboto-reg();
+        &:hover{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
 }
 
 @media(min-width: 480px){
     .site-nav{
         .phone{
             font-size: 1.5rem;
+        }
+    }
+}
+@media(min-width: 780px){
+    .site-nav{
+        .mobile-menu-button{
+            display: none;
+        }
+
+        .mobile-sub-menu{
+            display: none;
+        }
+
+        .desktop-menu-links{
+            display: flex;
+        }
+
+        .contact-info{
+            margin-left: 5%;
+            border-left: 1px inset #B8B8BD;
+            padding-left: 5%;
         }
     }
 }

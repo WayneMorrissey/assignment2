@@ -12,7 +12,14 @@
 <body>
     <nav class="site-nav">
         <ul class="nav-items">
-            <li id="mobile-menu-button"><i class="fas fa-bars"></i></li>
+            <li class="mobile-menu-button" id="mobile-menu-button"><i class="fas fa-bars"></i></li>
+            <ul class="desktop-menu-links">
+                <a class="desktop-menu-link" href="#skills-summary"><li>Skills</li></a>
+                <a class="desktop-menu-link" href="#socials-panel"><li>Social Media</li></a>
+                <a class="desktop-menu-link" href="#experience-panel"><li>Experience</li></a>
+                <a class="desktop-menu-link" href="#education-panel"><li>Education</li></a>
+                <a class="desktop-menu-link" href="#contact-panel"><li>Contact</li></a>
+            </ul>
             <li class="contact-info">
                 <p class="bold">waynemorrissey96@gmail.com</p>
                 <p class="phone">780 555 6864</p>
@@ -21,15 +28,13 @@
     </nav>
 
     <aside id="mobile-sub-menu" class="mobile-sub-menu">
-        <h2>Project Categories</h2><a href=""></a>
+        <h2>Sections</h2><a href=""></a>
         <ul class="mobile-menu-links">
-            <a href=""><li>Web</li></a>
-            <a href=""><li>JavaScript</li></a>
-            <a href=""><li>.Net</li></a>
-            <a href=""><li>Java</li></a>
-            <a href=""><li>Games</li></a>
-            <a href=""><li>SQL</li></a>
-            <a href=""><li>Contact</li></a>
+            <a href="#skills-summary"><li>Skills Summary</li></a>
+            <a href="#socials-panel"><li>Where to find Me</li></a>
+            <a href="#experience-panel"><li>Work Experience</li></a>
+            <a href="#education-panel"><li>Education</li></a>
+            <a href="#contact-panel"><li>Get in Touch</li></a>
         </ul>
     </aside>
 
@@ -50,7 +55,7 @@
     </header>
 
     <main>
-        <section class="skills-summary">
+        <section class="skills-summary" id="skills-summary">
             <h2 class="summary-heading">Skills Summary</h2>
             <p class="skills-text">I have a wide variety of skillsets that I leverage as a full stack developer. My biggest strength is pure coding, especially in backend focused business logic applications. I also excel at managing SQL databases in a multitude of RDBMS platforms. Other skills that I have honed through my experience are UX design and system analysis.</p>
             <ul class="skills-list">
@@ -77,7 +82,7 @@
             </ul>
         </section>
 
-        <section class="socials-panel">
+        <section class="socials-panel" id="socials-panel">
                 <h2 class="socials-heading">Where to Find Me</h2>
                 <p class="socials-text">Specializing in backend Java and .NET development, I am a full stack developer that develops efficient and high quality web applications. My philosophy involves making an intuitive and pleasant user experience while making sure that the application can provide all the necessary services in an efficient, secure, high quality manner.</p>
                 <ul class="socials-icons">
@@ -104,7 +109,7 @@
                 </ul>
             </section>
 
-            <section class="experience-panel">
+            <section class="experience-panel" id="experience-panel">
                 <h2 class="experience-heading">Work Experience</h2>
                 <p class="experience-text">I have been fortunate to spend time working as a fictional developer with some excellent fictional development teams. I have experience working many different forms of business related web applications.</p>
                 <ul class="experience-list">
@@ -151,7 +156,7 @@
                 </ul>
             </section>
 
-            <section class="education-panel">
+            <section class="education-panel" id="education-panel">
                 <h2 class="education-heading">Education</h2>
                 <p class="education-text">I have been fortunate to achieve an excellent education in the Digital Media and IT Program of the Norther Alberta Institute of Technology.</p>
                 <ul class="education-list">
@@ -190,7 +195,7 @@
                 </ul>
             </section>
 
-            <section class="contact-panel">
+            <section class="contact-panel" id="contact-panel">
                 <h2 class="contact-heading">Get in Touch</h2>
                 <form action="" class="contact-form">
                     <label for="contact-name">Name*</label>

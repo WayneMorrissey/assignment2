@@ -87,3 +87,17 @@
         }
     }
 }
+
+@media(min-width: 780px){
+    .skills-summary{
+        .skills-list{
+            flex-wrap: nowrap;
+        }
+        .skill-image{
+            flex: 0 0 25%;
+        }
+        .skill-image-heading{
+            font-size: 1.5rem;
+        }
+    }
+}

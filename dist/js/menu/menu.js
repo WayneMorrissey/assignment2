@@ -21,7 +21,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
      }
   }
  
-  
+  menu.onclick = (e) => {
+   isOpen = !isOpen;
+   if(!isOpen){
+      TweenMax.to(menu,  0.8, {top:"-20rem",    ease:Power4.easeOut});
+   }else{
+      TweenMax.to(menu, 0.5,  {top:"4.5rem",   ease:Power4.easeOut});
+   }
+  }
  
 });
  
